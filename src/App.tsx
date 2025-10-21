@@ -9,15 +9,17 @@ import Contact from "@/components/Contact.tsx";
 import Footer from "@/components/footer.tsx";
 
 
+
 function App() {
+
 
 
     return (
         <section className="w-full  overflow-hidden ">
-            <Navbar/>
+
+            <Navbar />
             <Hero/>
             <Services/>
-
             <Gallery/>
             <MarqueeGallery/>
             <Contact/>

@@ -32,7 +32,7 @@ function Services() {
     ];
 
     return (
-        <section className="px-3 lg:px-5 pb-10 lg:pb-20 overflow-hidden  flex-col justify-center  place-items-center  gap-10  flex w-full ">
+        <section className="px-3  lg:px-5 pb-10 lg:pb-20 overflow-hidden  flex-col justify-center  place-items-center  gap-10  flex w-full ">
             <div className="text-center max-w-2xl">
                 <h1 className="text-3xl md:text-5xl  font-semibold Aeonik-Pro text-center">Our Services</h1>
                 <p className="font-normal text-xs lg:text-sm  text-foreground/70">Expert Guidance for Every Step of Your Real Estate

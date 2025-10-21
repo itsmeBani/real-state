@@ -26,7 +26,7 @@ function Hero() {
             title: "Guide to Buyers",
             content:
                 "Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!",
-            src: "https://img1.wsimg.com/isteam/stock/771/",
+            src: "https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-53.jpg-SMALL.JPG",
             icon: BookOpen,
         },
     ];
@@ -35,7 +35,7 @@ function Hero() {
     return (
         <div className="w-full h-full flex pb-10 lg:pb-30 px-3 md:px-10 lg:px-0  justify-center">
 
-            <div className="pt-10 lg:pt-30 flex  flex-col gap-3 w-full lg:max-w-4xl">
+            <div className="pt-30 lg:pt-50 flex  flex-col gap-3 w-full lg:max-w-4xl">
                 <h2 className=" text-center font-normal text-sm lg:text-lg ">MARCI METZGER - THE RIDGE REALTY GROUP</h2>
                 <h1 className="Aeonik-Pro font-bold  text-center text-4xl md:text-7xl">Pahrump Realtor</h1>
                 <p className=" text-center leading-7 text-sm md:text-lg text-secondary-foreground/70 font-[400] ">Your trusted
@@ -51,13 +51,13 @@ function Hero() {
                     <div className="w-full relative  h-full flex gap-2 place-items-center">
                        <div>
                            <div className="p-10 lg:p-20">
-                               <img src={salesData[0].src} className=" rounded-md"/>
+                               <img src={salesData[0].src} className=" rounded-md opacity-90"/>
                            </div>
                            <div className="absolute max-w-[120px]   md:max-w-xs  lg:max-w-sm  top-0 right-0">
-                               <img src={salesData[1].src} className="rounded-sm shadow-md"/>
+                               <img src={salesData[1].src} className="rounded-sm  shadow-xl/20 dark:shadow-xl/60"/>
                            </div>
-                           <div className="absolute bottom-0 left-0   md:max-w-xs  max-w-[120px] lg:max-w-sm">
-                               <img src={salesData[2].src} className="rounded-md "/>
+                           <div className="absolute bottom-0 left-0 shadow-lg   md:max-w-xs  max-w-[120px] lg:max-w-sm">
+                               <img src={salesData[2].src} className="rounded-md shadow-xl/20 dark:shadow-xl/50"/>
                            </div>
                        </div>
 
@@ -68,7 +68,6 @@ function Hero() {
                      {salesData?.map((info,i)=>{
                          return (
                              <Card key={i}  className={` gap-3 h-full lg:h-auto overflow-hidden ${i === 1 && "bg-blue-600 text-white"} `}>
-                                 {/*<img className="rounded-md"  src={info?.image}/>*/}
 
                                  <CardHeader>
 
@@ -76,11 +75,9 @@ function Hero() {
                                      <CardAction ><info.icon className={`${i === 1 ? "text-white" : "text-blue-500"}`}/></CardAction>
                                  </CardHeader>
                                  <CardContent >
-                                     <p className={`font-regular leading-6 text-sm text-foreground/70 ${i=== 1 && "text-white"}`}>{info.content}</p>
+                                     <p className={`font-regular md:leading-6 text-sm text-foreground/70 ${i=== 1 && "text-white"}`}>{info.content}</p>
                                  </CardContent>
-                                 {/*<CardFooter>*/}
-                                 {/*    <p>Card Footer</p>*/}
-                                 {/*</CardFooter>*/}
+
                              </Card>
                          )
                      })}

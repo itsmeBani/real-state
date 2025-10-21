@@ -13,7 +13,7 @@ export default function Footer() {
                     </p>
                 </div>
 
-                {/* Contact Info */}
+
                 <div className="space-y-2">
                     <h3 className="text-sm font-semibold">Contact Us</h3>
 
@@ -25,10 +25,10 @@ export default function Footer() {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Mail className="w-4 h-4" />
                         <a
-                            href="mailto:info@ridgegroup.com"
+                            href="mailto:marcimatzger@gmail.com"
                             className="hover:text-blue-500 transition-colors"
                         >
-                            info@ridgegroup.com
+                            marcimatzger@gmail.com
                         </a>
                     </div>
 
