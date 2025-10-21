@@ -36,7 +36,7 @@ function Hero() {
         <div className="w-full h-full flex pb-10 lg:pb-30 px-3 md:px-10 lg:px-0  justify-center">
 
             <div className="pt-10 lg:pt-30 flex  flex-col gap-3 w-full lg:max-w-4xl">
-                <h2 className=" text-center font-normal">MARCI METZGER - THE RIDGE REALTY GROUP</h2>
+                <h2 className=" text-center font-normal text-sm lg:text-lg ">MARCI METZGER - THE RIDGE REALTY GROUP</h2>
                 <h1 className="Aeonik-Pro font-bold  text-center text-4xl md:text-7xl">Pahrump Realtor</h1>
                 <p className=" text-center leading-7 text-sm md:text-lg text-secondary-foreground/70 font-[400] ">Your trusted
                     Pahrump Realtor at The Ridge Realty Group, dedicated to helping you buy, sell, or invest with
