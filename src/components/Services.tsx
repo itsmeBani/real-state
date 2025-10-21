@@ -32,15 +32,15 @@ function Services() {
     ];
 
     return (
-        <section className="pb-20 overflow-hidden  flex-col justify-center  place-items-center  gap-10  flex w-full ">
+        <section className="px-3 lg:px-5 pb-10 lg:pb-20 overflow-hidden  flex-col justify-center  place-items-center  gap-10  flex w-full ">
             <div className="text-center max-w-2xl">
-                <h1 className="text-5xl  font-semibold Aeonik-Pro text-center">Our Services</h1>
-                <p className="font-normal text-foreground/70">Expert Guidance for Every Step of Your Real Estate
+                <h1 className="text-3xl md:text-5xl  font-semibold Aeonik-Pro text-center">Our Services</h1>
+                <p className="font-normal text-xs lg:text-sm  text-foreground/70">Expert Guidance for Every Step of Your Real Estate
                     Journey, from Finding the Perfect Property to Closing the Deal with Confidence</p>
 
             </div>
 
-            <div className="grid w-full    px-5 lg:px-40 gap-4   grid-cols-3 ">
+            <div className="grid w-full     md:px-10 lg:px-40 gap-4   md:grid-cols-2 lg:grid-cols-3 ">
                 {services.map((info,i)=>{
                     return (
                         <Card  key={i} className=" gap-3 overflow-hidden">
@@ -52,7 +52,7 @@ function Services() {
                                       <CardAction><info.icon className={"text-blue-600"}/></CardAction>
                             </CardHeader>
                             <CardContent>
-                                <p className="font-regular leading-6 text-sm text-foreground/70">{info.description}</p>
+                                <p className="font-regular md:text-sm  lg:leading-6 text-sm text-foreground/70">{info.description}</p>
                             </CardContent>
                             {/*<CardFooter>*/}
                             {/*    <p>Card Footer</p>*/}

@@ -10,13 +10,13 @@ function MarqueeGallery() {
     ];
 
     return (
-        <div className="flex px-40  overflow-hidden py-10  items-center justify-center bg-background">
+        <div className="flex md:px-40  overflow-hidden py-10  items-center justify-center bg-background">
             <Marquee>
                 <MarqueeFade side="left" />
                 <MarqueeFade side="right" />
                 <MarqueeContent className={"overflow-hidden"}>
                     {logos.map((logo, index) => (
-                        <MarqueeItem className="h-20 w-20" key={index}>
+                        <MarqueeItem className="md:h-20 h-15 w-15 md:w-20" key={index}>
                             <img
                                 alt={`Placeholder ${index}`}
                                 className={`overflow-hidden ${index === 1 && "dark:invert"} rounded-full`}

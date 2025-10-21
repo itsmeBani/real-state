@@ -20,10 +20,10 @@ function Gallery() {
         ];
 
     return (
-        <div className="w-full px-40 h-full pt-10  flex  flex-col  place-items-center  gap-3  py-3">
+        <div className="w-full px-3 lg:px-40 h-full pt-10  flex  flex-col  place-items-center  gap-3  py-3">
             <div className="text-center max-w-2xl">
-                <h1 className="text-5xl font-semibold Aeonik-Pro text-center">Gallery</h1>
-                <p className="font-normal text-foreground/70">
+                <h1 className="text-4xl md:text-5xl font-semibold Aeonik-Pro text-center">Gallery</h1>
+                <p className=" font-normal  text-xs lg:text-sm  text-foreground/70">
                     Explore a curated showcase of our real estate services, from property tours and interior styling to investment consultation and personalized support. See how we bring your real estate dreams to life.
                 </p>
             </div>
@@ -32,7 +32,7 @@ function Gallery() {
                 <Carousel opts={{
                     align: "start",
                     loop: true,
-                }}  className="w-full max-w-3xl  ">
+                }}  className="w-[80%] md:max-w-3xl  ">
                     <CarouselContent >
                         {imageUrls.map((url, index) => (
                             <CarouselItem  key={index}>

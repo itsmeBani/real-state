@@ -7,10 +7,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 function Contact() {
     return (
-        <section className="px-40 flex flex-col  py-10 gap-7  w-full  ">
+        <section className="px-3 md:px-10 lg:px-40 flex flex-col  py-10 gap-7  w-full  ">
             <div className="max-w-2xl">
-                <h1 className="text-5xl font-semibold Aeonik-Pro">Get in Touch</h1>
-                <p className="font-normal text-foreground/70">
+                <h1 className="text-4xl md:text-5xl font-semibold Aeonik-Pro">Get in Touch</h1>
+                <p className="font-normal text-xs lg:text-sm  text-foreground/70">
                     We'd love to hear from you! Whether you’re buying, selling, or just exploring your options, our team
                     is here to help. Call us, send a message, or stop by our office — let’s start making your real
                     estate goals a reality.
@@ -18,9 +18,9 @@ function Contact() {
             </div>
 
 
-            <div className="flex ">
+            <div className="flex flex-col md:flex-row">
                 <div className="w-full flex-col flex  gap-5  ">
-                    <div className="h-full  flex relative">
+                    <div className="h-full  flex md:justify-start justify-center relative">
                         <img src={clientPicture} className="h-[230px] aspect-square rounded-md"/>
 
                     </div>

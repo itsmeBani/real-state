@@ -13,9 +13,9 @@ function Navbar() {
     const { setTheme ,theme} = useTheme()
 
     return (
-        <div className="md:px-5 py-2 bg-background border-t-none border-b-border border-1 w-full grid grid-cols-2 md:grid-cols-3 justify-between  place-items-center">
+        <div className="px-2 md:px-5 py-2 bg-background border-t-none border-b-border border-1 w-full flex justify-between  place-items-center">
          <div className="w">
-         <img src={Logo} className="w-30 md:w-50 dark:invert" alt="Marci Metzgir" />
+         <img src={Logo} className="w-20 md:w-50 dark:invert" alt="Marci Metzgir" />
 
 
          </div >
